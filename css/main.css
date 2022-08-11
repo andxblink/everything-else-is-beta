@@ -1,0 +1,73 @@
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 4px -10px rgba(0, 0, 0, 0.04),
+    0 13px 13px -10px rgba(0, 0, 0, 0.06), 0 40px 60px -10px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+}
+
+.logo {
+  max-width: 200px;
+  padding: 1em;
+}
+
+.text-row {
+  margin-top: 7vh;
+}
+
+h2 {
+  margin-top: 7vh;
+  text-align: center;
+}
+
+h1 {
+  margin: 7vh 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.image-row {
+  display: grid;
+  grid-gap: 2em;
+}
+
+.image-row img {
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.caption {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-top: .8em;
+  text-align: center;
+}
+
+/* Tablet
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 800px) {
+  .image-row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5em;
+  }
+
+  .image-row img {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Desktop
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
